@@ -5,8 +5,10 @@ import Sidebar from "@/components/ui/Sidebar.vue";
 </script>
 
 <template>
-  <div class="flex w-svw h-svh overflow-hidden">
-    <Sidebar><DrinkMenu /></Sidebar>
+  <div class="flex w-screen h-dvh overflow-hidden">
+    <Sidebar>
+      <DrinkMenu />
+    </Sidebar>
     <DrinkDetails />
   </div>
 </template>

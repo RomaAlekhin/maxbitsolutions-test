@@ -4,7 +4,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 <template>
   <div class="flex flex-col gap-4">
-    <div class="flex justify-between flex-col gap-6 sm:flex-row">
+    <div class="flex justify-between gap-6">
       <div class="flex flex-col gap-6 flex-1">
         <Skeleton class="h-10" />
 

@@ -22,11 +22,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <Skeleton
-    v-show="isLoading"
-    class="rounded-xl"
-    :class="`w-[${width}px] h-[${height}px]`"
-  />
+  <Skeleton v-show="isLoading" class="rounded-xl w-full h-full" />
 
   <img
     class="rounded-xl"

@@ -17,3 +17,14 @@ export const useCacheStore = defineStore("cache", {
     },
   },
 });
+
+export const useSidebarStore = defineStore("sidebar", {
+  state: () => ({
+    isOpen: false as boolean,
+  }),
+  actions: {
+    toggle() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+});

@@ -6,8 +6,8 @@ defineProps<{ cocktail: Cocktail }>();
 </script>
 
 <template>
-  <div class="flex justify-between flex-col gap-6 sm:flex-row">
-    <div class="flex flex-col gap-6">
+  <div class="flex justify-between gap-6">
+    <div class="flex flex-1 flex-col gap-6">
       <h1 class="text-3xl font-bold">{{ cocktail.strDrink }}</h1>
 
       <ul>
@@ -17,7 +17,7 @@ defineProps<{ cocktail: Cocktail }>();
       </ul>
     </div>
 
-    <div>
+    <div class="flex justify-end flex-1">
       <Image
         width="200"
         height="200"
