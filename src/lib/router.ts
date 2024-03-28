@@ -2,6 +2,7 @@ import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
 
 import CocktailDetails from "@/pages/CocktailDetails.vue";
 import { CocktailSlug } from "@/components/features/drinks/types";
+import NotFound from "@/pages/NotFound.vue";
 
 export const routesInfo = {
   cocktailDetails: {
@@ -20,6 +21,7 @@ const routes: RouteRecordRaw[] = [
     children: [],
   },
   { path: routesInfo.cocktailDetails.path, component: CocktailDetails },
+  { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
 ];
 
 export const router = createRouter({
