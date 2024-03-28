@@ -20,7 +20,7 @@ const links = [
       v-for="link in links"
       :key="link.to"
       :to="link.to"
-      class="py-3 px-4 hover:bg-slate-300"
+      class="py-3 px-4 transition-colors hover:bg-foreground/20"
     >
       {{ link.label }}
     </RouterLink>

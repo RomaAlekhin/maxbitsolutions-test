@@ -25,5 +25,5 @@ const routes: RouteRecordRaw[] = [
 export const router = createRouter({
   history: createWebHistory(),
   routes,
-  linkActiveClass: "bg-slate-200",
+  linkActiveClass: "bg-primary/10",
 });
