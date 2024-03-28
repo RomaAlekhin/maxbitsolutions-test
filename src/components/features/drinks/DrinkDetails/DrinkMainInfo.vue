@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Cocktail } from "@/api/types";
+import Image from "@/components/ui/Image.vue";
 
 defineProps<{ cocktail: Cocktail }>();
 </script>
@@ -17,11 +18,10 @@ defineProps<{ cocktail: Cocktail }>();
     </div>
 
     <div>
-      <img
-        class="rounded-xl"
-        :key="cocktail.strDrinkThumb"
+      <Image
         width="200"
-        loading="lazy"
+        height="200"
+        :key="cocktail.strDrinkThumb"
         :src="cocktail.strDrinkThumb"
         :alt="cocktail.strDrink"
       />
