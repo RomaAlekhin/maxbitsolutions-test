@@ -17,7 +17,14 @@ defineProps<{ cocktail: Cocktail }>();
     </div>
 
     <div>
-      <img width="200" :src="cocktail.strDrinkThumb" :alt="cocktail.strDrink" />
+      <img
+        class="rounded-xl"
+        :key="cocktail.strDrinkThumb"
+        width="200"
+        loading="lazy"
+        :src="cocktail.strDrinkThumb"
+        :alt="cocktail.strDrink"
+      />
     </div>
   </div>
 </template>
