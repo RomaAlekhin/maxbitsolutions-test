@@ -15,12 +15,12 @@ const links = [
 </script>
 
 <template>
-  <nav class="flex flex-col gap-2">
+  <nav class="flex flex-col">
     <RouterLink
       v-for="link in links"
       :key="link.to"
       :to="link.to"
-      class="py-2 px-4"
+      class="py-3 px-4 hover:bg-slate-300"
     >
       {{ link.label }}
     </RouterLink>

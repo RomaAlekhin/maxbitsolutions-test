@@ -1,10 +1,7 @@
 import { useFetch } from "@/composables";
 import { Ref, computed, toValue } from "vue";
 import { API_CONFIG } from "./config";
-
-interface Cocktail {
-  name: string;
-}
+import { Cocktail } from "./types";
 
 const getUrl = (slug: string): string => {
   return `${API_CONFIG.theCocktailDBSearchUrl}${slug}`;
